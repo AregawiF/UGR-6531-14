@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 8em;
+  background-color: #f1d3a2;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+p.logo-text {
+  font-family: sofia;
+  position: absolute;
+  top: 0.4em;
+  left: 0.5em;
+  flex: 1 0.5 1;
+  justify-content: stretch;
+}
+
+nav ul {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+}
+
+.first-three {
+  width: 30vw;
+  align-self: flex-start;
+}
+
+.last-two {
+  width: 45vw;
+}
+
+header a {
+  color: blue;
+  font-size: 1.15em;
+  text-decoration: none;
+}
+
+header a:active {
+  background-color: rgb(208, 233, 126);
+  color: rgb(155, 11, 35);
+}
+
+header a:focus {
+  border: 0.1em solid rgb(65, 62, 62);
+}
+
+.home-page-main {
+  background-color: #fbfcc4;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-page {
+  max-width: 100%;
+  height: 25vh;
+  background: url("../Images/Homepage_banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin: 3em 0;
+}
+
+.main-page>h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: Abyssinica SIL;
+  position: relative;
+  top: 0.7em;
+  background-image: linear-gradient(to bottom, #36026a 20%, rgb(214, 183, 10) 30%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+article {
+  background-color: #C4FCEF;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.br {
+  background-color: #C4FCEF;
+}
+
+.home-page-article>h2 {
+  font-family: roboto slab;
+  font-size: 2em;
+  padding: 0.5em 0;
+}
+
+.home-page-article>p {
+  font-family: roboto;
+  font-size: 20px;
+  padding-bottom: 1em;
+}
+
+.education-main {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border: 2px solid rgb(73, 72, 72);
+  border-collapse: collapse;
+  box-shadow: 5px -4px 3px rgb(190, 116, 79);
+  margin: 1em;
+  padding: 1em;
+}
+
+.home-page-main {
+  background-color: #C4FCEF;
+}
+
+table td,
+th {
+  border: 1px solid;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+th {
+  background-color: cadetblue;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+  font-size: 1em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(220, 219, 219);
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+.my-education {
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.my-education>h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+}
+
+.my-education>p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 1em;
+}
+
+.interests-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.main-heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+
+.text-1-part-1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+.text-1-part-2,
+.text-2 {
+  margin: 1em 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+.first-section-1st-half {
+  display: flex;
+}
+
+.first-section-1st-half-main {
+  flex: 1;
+}
+
+.first-section img {
+  width: 100%;
+}
+
+figcaption {
+  font-family: monospace;
+}
+
+.interests-body {
+  background-color: #C4FCEF;
+}
+
+.first-section,
+.second-section {
+  background-color: #C4FCEF;
+  padding: 1em;
+}
+
+.sidebar {
+  background-color: rgb(244, 148, 79);
+  border-radius: 1em;
+  max-height: 28em;
+  max-width: 9em;
+  padding: 1em 0.3em;
+  margin-left: 0.6em;
+}
+
+.sidebar h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.sidebar ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9em;
+  list-style-position: inside;
+  margin-left: -2em;
+}
+
+.sidebar ul li {
+  list-style-type: circle;
+}
+
+.second-section h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.video-supported video {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.video-supported h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.video-supported p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.resume-main {
+  padding-left: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-main>h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.7em;
+  padding: 0.5em 0;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.resume-img {
+  max-width: 90%;
+  display: block;
+  padding-left: 0.5em;
+  padding: 0 auto;
+}
+
+figcaption {
+  font-size: 1.2em;
+  font-family: monospace;
+}
+
+.resume-main>p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main>img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 0.2em solid rgb(156, 153, 153);
+  border-style: none none solid none;
+  margin: 1em 1em;
+}
+
+.contact-main>h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+
+form {
+  padding-left: 1em;
+  padding-bottom: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+input {
+  border-radius: 0.3em;
+  background-color: aliceblue;
+  max-width: 11em;
+  font-size: 1.1em;
+}
+
+#Phone {
+  max-width: 9em;
+}
+
+#FirstName,
+#LastName {
+  max-width: 10em;
+}
+
+input[type='submit'] {
+  background-color: rgb(203, 241, 146);
+  text-transform: capitalize;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+textarea {
+  background-color: rgb(230, 230, 230);
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  font-size: 1.1em;
+  max-width: 90%;
+}
+
+.my-contact-info {
+  padding-left: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-contact-info>h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+  width: 100%;
+  order: -2;
+}
+
+.my-contact-info img {
+  width: 3em;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-lables>p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+
+.contact-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-lables {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+footer {
+  height: 4em;
+  background-color: #0466c2;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  padding: 0.5em;
+}
