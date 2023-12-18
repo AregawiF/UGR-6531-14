@@ -3,35 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <title>Home-Page</title>
 </head>
-<body>
-  <header>
-    <p>AREGAWI FIKRE</p>
-    <nav>
-      <ul>
-        <li><a href="./Home-Page.html">Home-Page</a></li>
-        <li><a href="./Education.html">Education</a></li>
-        <li><a href="./Interests.html">Interests</a></li>
-        <li><a href="./Resume.html">Resume</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
-      </ul>
+<body class="has-background-primarsy-light">
+  <header class="has-background-warning">
+    <p class="is-family-primary is-italic">AREGAWI FIKRE</p>
+    <nav class="navbar has-background-warning has-height-6">
+      <div class="navbar-meenu container is-flex is-flex-wrap-wrap is-family-code">
+        <ul >
+          <div class="navbar-start is-flex-tablet">
+            <li><a href="./Home-Page.html" class="navbar-item" >Home-Page</a></li>
+            <li><a href="./Education.html" class="navbar-item" >Education</a></li>
+            <li><a href="./Interests.html" class="navbar-item" >Interests</a></li>
+          </div>
+        </ul>
+        <ul>
+          <div class="navbar-end is-flex-tablet" >
+            <li><a href="./Resume.html" class="navbar-item" >Resume</a></li>
+            <li><a href="./Contact.html" class="navbar-item" >Contact</a></li>
+          </div>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main>
-    <h1>Hello I'm <br>Aregawi Fikre</h1>
-    <img src="./Images/Homepage_banner.png" alt="banner image">
-    <article>
-      <h2>About me</h2>
-      <p>Greetings! My name is Aregawi Fikre, I am a tech enthusiast living in Addis Ababa, Ethiopia. Currently I am a third-year Software Engineering student at Addis Ababa Institute of Technology. Passionate about unraveling the intricacies of code and creating innovative solutions, my academic journey has been a thrilling exploration into the dynamic world of software development. Eager to learn, adapt, and contribute to the ever-evolving tech landscape, I embrace challenges with enthusiasm. From collaborative projects to individual pursuits, I am driven by a desire to bridge the gap between theoretical knowledge and practical application, continually striving for excellence in my academic and technological pursuits.</p>
+  <main >
+    <h1 class="title is-size-1 has-text-centered is-family-secondary pt-5 ">Hello I'm <br>Aregawi Fikre</h1>
+    <img src="./Images/Homepage_banner.png" alt="banner image" class="" style="background-image: url(./Images/Homepage_banner.png) no-repeat;">
+    <article class="notification mt-6 ml-4 mr-4">
+      <h2 class="subtitle is-size-2">About me</h2>
+      <p class="is-size-5 pb-6">Greetings! My name is Aregawi Fikre, I am a tech enthusiast living in Addis Ababa, Ethiopia. Currently I am a third-year Software Engineering student at Addis Ababa Institute of Technology. Passionate about unraveling the intricacies of code and creating innovative solutions, my academic journey has been a thrilling exploration into the dynamic world of software development. Eager to learn, adapt, and contribute to the ever-evolving tech landscape, I embrace challenges with enthusiasm. From collaborative projects to individual pursuits, I am driven by a desire to bridge the gap between theoretical knowledge and practical application, continually striving for excellence in my academic and technological pursuits.</p>
     </article>
   </main>
   <br>
   <br>
   <br>
   <br>
-  <footer>
-    <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
+  <footer class="has-background-info-dark ">
+    <p class="is-size-6 p-3 has-text-white">&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
   </footer>
 </body>
 </html>

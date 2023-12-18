@@ -3,59 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <title>Education</title>
 </head>
 <body>
-  <header>
-    <p>AREGAWI FIKRE</p>
-    <nav>
-      <ul>
-        <li><a href="./Home-Page.html">Home-Page</a></li>
-        <li><a href="./Education.html">Education</a></li>
-        <li><a href="./Interests.html">Interests</a></li>
-        <li><a href="./Resume.html">Resume</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
-      </ul>
+  <header class="has-background-warning">
+    <p class="is-family-primary is-italic">AREGAWI FIKRE</p>
+    <nav class="navbar has-background-warning has-height-6">
+      <div class="navbar-meenu container is-flex is-flex-wrap-wrap is-family-code">
+        <ul >
+          <div class="navbar-start is-flex-tablet">
+            <li><a href="./Home-Page.html" class="navbar-item" >Home-Page</a></li>
+            <li><a href="./Education.html" class="navbar-item" >Education</a></li>
+            <li><a href="./Interests.html" class="navbar-item" >Interests</a></li>
+          </div>
+        </ul>
+        <ul>
+          <div class="navbar-end is-flex-tablet" >
+            <li><a href="./Resume.html" class="navbar-item" >Resume</a></li>
+            <li><a href="./Contact.html" class="navbar-item" >Contact</a></li>
+          </div>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
-    <table>
-      <tr>
-        <th>Courses I've taken</th>
-        <th>Credit Hours</th>
-      </tr>
-      <tr>
-        <td>Fundamentals of Data Structure and Algorithm Analysis</td>
-        <td>4.00</td>
-      </tr>
-      <tr>
-        <td>Object Oriented Programming</td>
-        <td>3.00</td>
-      </tr>
-      <tr>
-        <td>Fundamental of Database</td>
-        <td>3.00</td>
-      </tr>
-      <tr>
-        <td>Fundamental of Networking</td>
-        <td>3.00</td>
-      </tr>
-      <tr>
-        <td>Discrete Mathematics</td>
-        <td>3.00</td>
-      </tr>
-      
-    </table>
-    <section>
-      <h2>My Educational Journey</h2>
-      <p>Embarking on my academic journey at Addis Ababa Institute of Technology (AAiT), I've undertaken a diverse array of courses that form the core of my software engineering education. Fundamental subjects such as Data Structures and Algorithms have fine-tuned my problem-solving ability, while deep dives into Software Design and Architecture have provided valuable insights into building robust applications. Courses in Database Management, object oriented programming, and Discrete Mathematics have equipped me with hands-on skills, fostering a practical understanding of these critical domains. Additionally, theoretical studies in Software Engineering Principles have broadened my perspective, emphasizing the importance of structured approaches to software development.</p>
-
-      <p>The curriculum at AAiT has not only expanded my technical knowledge but also cultivated a deep-seated passion for continual learning and innovation within the dynamic realm of technology. As a third-year software engineering student, each course has been a building block, contributing to my growth and preparing me for the ever-evolving challenges and opportunities in the field.</p>
+    <div class="columns is-block is-flex-desktop is-fleex-tablet">
+      <div class="column">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidt mt-6 mb-6 ml-3 mr-2 column">
+          <tr>
+            <th class="thead has-background-primary-dark">Courses I've taken</th>
+            <th class="thead has-background-primary-dark">Credit Hours</th>
+          </tr>
+          <tr>
+            <td>Fundamentals of Data Structure and Algorithm Analysis</td>
+            <td>4.00</td>
+          </tr>
+          <tr>
+            <td>Object Oriented Programming</td>
+            <td>3.00</td>
+          </tr>
+          <tr>
+            <td>Fundamental of Database</td>
+            <td>3.00</td>
+          </tr>
+          <tr>
+            <td>Fundamental of Networking</td>
+            <td>3.00</td>
+          </tr>
+          <tr>
+            <td>Discrete Mathematics</td>
+            <td>3.00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="column">
+        <section class="column mt-6 ml-3 mr-3">
+          <h2 class="subtitle is-size-2">My Educational Journey</h2>
+          <p>Embarking on my academic journey at Addis Ababa Institute of Technology (AAiT), I've undertaken a diverse array of courses that form the core of my software engineering education. Fundamental subjects such as Data Structures and Algorithms have fine-tuned my problem-solving ability, while deep dives into Software Design and Architecture have provided valuable insights into building robust applications. Courses in Database Management, object oriented programming, and Discrete Mathematics have equipped me with hands-on skills, fostering a practical understanding of these critical domains. Additionally, theoretical studies in Software Engineering Principles have broadened my perspective, emphasizing the importance of structured approaches to software development.</p>
+      </div>
+    </div>
+        <p class="ml-5 mr-3">The curriculum at AAiT has not only expanded my technical knowledge but also cultivated a deep-seated passion for continual learning and innovation within the dynamic realm of technology. As a third-year software engineering student, each course has been a building block, contributing to my growth and preparing me for the ever-evolving challenges and opportunities in the field.</p>
     </section>
   </main>
     <br><br>
-  <footer>
-    <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
+  <footer class="has-background-info-dark ">
+    <p class="is-size-6 p-3 has-text-white">&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
   </footer>
 </body>
 </html>

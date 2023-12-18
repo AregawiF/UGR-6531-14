@@ -3,52 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <title>Contact</title>
 </head>
 <body>
-  <header>
-    <p>AREGAWI FIKRE</p>
-    <nav>
-      <ul>
-        <li><a href="./Home-Page.html">Home-Page</a></li>
-        <li><a href="./Education.html">Education</a></li>
-        <li><a href="./Interests.html">Interests</a></li>
-        <li><a href="./Resume.html">Resume</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
-      </ul>
+  <header class="has-background-warning">
+    <p class="is-family-primary is-italic">AREGAWI FIKRE</p>
+    <nav class="navbar has-background-warning has-height-6">
+      <div class="navbar-meenu container is-flex is-flex-wrap-wrap is-family-code">
+        <ul >
+          <div class="navbar-start is-flex-tablet">
+            <li><a href="./Home-Page.html" class="navbar-item" >Home-Page</a></li>
+            <li><a href="./Education.html" class="navbar-item" >Education</a></li>
+            <li><a href="./Interests.html" class="navbar-item" >Interests</a></li>
+          </div>
+        </ul>
+        <ul>
+          <div class="navbar-end is-flex-tablet" >
+            <li><a href="./Resume.html" class="navbar-item" >Resume</a></li>
+            <li><a href="./Contact.html" class="navbar-item" >Contact</a></li>
+          </div>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
-    <img src="./Images/Contact_us.jpg" alt="a contact us banner">
-    <h2>Leave your comments</h2>
-    <form>
-      <label for="FirstName">First name: </label>
-      <input type="text" id="FirstName"> <br><br>
-      <label for="LastName">First name: </label>
-      <input type="text" id="LastName"> <br><br>
-      <label for="Email">Email: </label>
-      <input type="email" id="Email" placeholder="example@gmail.com"> <br><br>
-      <label for="Phone">Phone number: </label>
-      <input type="tel" id="Phone" placeholder="+251 123 45 67 89"> <br><br>
-      <label for="Description">Message </label> <br>
-      <textarea name="Description" id="Description" cols="40" rows="7"></textarea>
+    <figure class="image is-fullwidth">
+      <img src="./Images/Contact_us.jpg" alt="a contact us banner">
+    </figure>
+    <h2 class="subtitle is-size-3 is-size-4-mobile has-text-centered ">Leave your comments</h2>
+    <form class="form ml-5 mr-5">
+      <label for="FirstName" >First name: </label>
+      <input type="text" id="FirstName" class="input is-info is-small"> 
+        <br><br>
+      <label for="LastName">Last name: </label>
+      <input type="text" id="LastName" class="input is-info"> 
       <br><br>
-      <input type="submit" value="submit">
+      <label for="Email">Email: </label>
+      <input type="email" id="Email" placeholder="example@gmail.com" class="input is-info"> 
+      <br><br>
+      <label for="Phone">Phone number: </label>
+      <input type="tel" id="Phone" placeholder="+251 123 45 67 89" class="input is-info"> 
+      <br><br>
+      <label for="Description">Message </label> 
+      <br>
+      <textarea name="Description" id="Description" cols="40" rows="7" class="textarea is-info is-small"></textarea>
+      <br><br>
+      <input type="submit" value="submit" class="button is-info">
       <br><br>
     </form>
-    <section>
-      <h2>Contact</h2>
-      <img src="./Images/phone_icon.jpg" alt="an icon of Phone.">
-      <p>Phone Number: +251 962 21 35 30</p>
-      <img src="./Images/Email_icon.png" alt="an icon of Email.">
-      <p>Email: aregawifikre@gmail.com</p>
-      <img src="./Images/linkedin_icon.png" alt="an icon of linkedin">
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/aregawi-fikre-ab596124b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXEvx422PQOafQQem%2Fydm1w%3D%3D" target="_blank">Contact me</a></p>
+    <section class="section ">
+      <h2 class="subtitle is-size-4">Contact</h2>
+      <article class="media pb-0">
+        <figure class="media-left image is-32x32 " >
+          <img src="./Images/phone_icon.jpg" alt="an icon of Phone." class="is-rounded ">
+        </figure>
+        <div class="media-content">
+          <p>Phone Number: +251 962 21 35 30</p>
+        </div>
+      </article>
+      <article class="media pt-0">
+        <figure class="media-left image is-32x32">
+          <img src="./Images/Email_icon.png" alt="an icon of Email." class="is-rounded ">
+        </figure>
+        <div class="media-content">
+          <p>Email: aregawifikre@gmail.com</p>
+        </div>
+      </article>
+      <article class="media pt-0">
+        <figure class="media-left image is-32x32 ">
+          <img src="./Images/linkedin_icon.png" alt="an icon of linkedin" class="is-rounded  ">
+        </figure>
+        <div class="media-content">
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/aregawi-fikre-ab596124b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXEvx422PQOafQQem%2Fydm1w%3D%3D" target="_blank">Contact me</a></p>
+        </div>
+      </article>
     </section>
   </main>
       <br><br><br>
-  <footer>
-    <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
+  <footer class="has-background-info-dark ">
+    <p class="is-size-6 p-3 has-text-white">&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
   </footer>
 </body>
 </html>
