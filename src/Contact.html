@@ -1,61 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-  <title>Contact</title>
-</head>
-<body class="contact-body">
-  <header>
-    <p class="logo-text">AREGAWI FIKRE</p>
-    <nav>
-      <div class="first-three links" >
-          <ul>
-          <li><a href="./Home-Page.html">Home-Page</a></li>
-          <li><a href="./Education.html">Education</a></li>
-          <li><a href="./Interests.html">Interests</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet"/>
+    <title>Contact</title>
+  </head>
+  <body class="contact-body" id="contact-body">
+    <header class="header">
+      <p class="header__logo-text">AREGAWI FIKRE</p>
+      <nav class="header__nav">
+        <div class="header__nav-first-three links">
+          <ul class="header__nav-first-three-list">
+            <li class="header__nav-item header__nav-item--1">
+              <a href="./Home-Page.html">Home-Page</a>
+            </li>
+            <li class="header__nav-item header__nav-item--2">
+              <a href="./Education.html">Education</a>
+            </li>
+            <li class="header__nav-item header__nav-item--3">
+              <a href="./Interests.html">Interests</a>
+            </li>
           </ul>
         </div>
-        <div class="last-two links">
-          <ul>
-          <li><a href="./Resume.html">Resume</a></li>
-          <li><a href="./Contact.html">Contact</a></li>
+        <div class="header__nav-last-two links">
+          <ul class="header__nav-last-two-list">
+            <li class="header__nav-item header__nav-item--4">
+              <a href="./Resume.html">Resume</a>
+            </li>
+            <li class="header__nav-item header__nav-item--5">
+              <a href="./Contact.html">Contact</a>
+            </li>
           </ul>
         </div>
-    </nav>
-  </header>
-  <main class="contact-main">
-    <img src="./Images/Contact_us.jpg" alt="a contact us banner">
-    <h2 class="main-heading">Leave your comments</h2>
-    <form>
-      <label for="FirstName">First name: </label>
-      <input type="text" id="FirstName"> <br><br>
-      <label for="LastName">Last name: </label>
-      <input type="text" id="LastName"> <br><br>
-      <label for="Email">Email: </label>
-      <input type="email" id="Email" placeholder="example@gmail.com"> <br><br>
-      <label for="Phone">Phone number: </label>
-      <input type="tel" id="Phone" placeholder="+251 123 45 67 89"> <br><br>
-      <label for="Description">Message </label> <br>
-      <textarea name="Description" id="Description" cols="40" rows="7"></textarea>
-      <br><br>
-      <input type="submit" value="submit">
-      <br><br>
-    </form>
-    <section class="my-contact-info">
-      <h2>Contact</h2>
-      <img src="./Images/phone_icon.jpg" alt="an icon of Phone." class="phone-icon icons">
-      <p class="phone-label labels">Phone Number: +251 962 21 35 30</p>
-      <img src="./Images/Email_icon.png" alt="an icon of Email." class="email-icon icons">
-      <p class="email-label labels">Email: aregawifikre@gmail.com</p>
-      <img src="./Images/linkedin_icon.png" alt="an icon of linkedin" class="linkedin-icon icons">
-      <p class="linkedin-label labels">LinkedIn: <a href="https://www.linkedin.com/in/aregawi-fikre-ab596124b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXEvx422PQOafQQem%2Fydm1w%3D%3D" target="_blank">Contact me</a></p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
-  </footer>
-</body>
+      </nav>
+    </header>
+    <main class="contact-main" id="contact-main">
+      <img src="./Images/Contact_us.jpg" alt="a contact us banner" />
+      <h2 class="main-heading">Leave your comments</h2>
+      <form id="form">
+        <div>
+          <label for="FirstName">First name: </label>
+          <input type="text" id="FirstName" /> <br /><br />
+        </div>
+        <div>
+          <label for="LastName">Last name: </label>
+          <input type="text" id="LastName" /> <br /><br />
+        </div>
+        <div>
+          <label for="Email">Email: </label>
+          <input type="email" id="Email" placeholder="example@gmail.com" />
+          <br /><br />
+        </div>
+        <div>
+          <label for="Phone">Phone number: </label>
+          <input type="tel" id="Phone" placeholder="+251 123 45 67 89" />
+          <br /><br />
+        </div>
+        <div>
+          <label for="Description">Message </label> <br />
+          <textarea
+          name="Description"
+          id="Description"
+          cols="40"
+          rows="7"
+          ></textarea>
+          <br /><br />
+        </div>
+        <div>
+          <input type="submit" id="submit-button" value="submit" onclick="contactSubmit()"/>
+          <br/>
+          <div id="error"></div>
+          <br/>
+        </div>
+      </form>
+      <section class="my-contact-info" id="my-contact-info">
+        <h2>Contact</h2>
+        <img
+          src="./Images/phone_icon.jpg"
+          alt="an icon of Phone."
+          class="phone-icon icons"
+        />
+        <p class="phone-label labels">Phone Number: +251 962 21 35 30</p>
+        <img
+          src="./Images/Email_icon.png"
+          alt="an icon of Email."
+          class="email-icon icons"
+        />
+        <p class="email-label labels">Email: aregawifikre@gmail.com</p>
+        <img
+          src="./Images/linkedin_icon.png"
+          alt="an icon of linkedin"
+          class="linkedin-icon icons"
+        />
+        <p class="linkedin-label labels">
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/aregawi-fikre-ab596124b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXEvx422PQOafQQem%2Fydm1w%3D%3D"
+            target="_blank"
+            >Contact me</a
+          >
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        &copy; 2023. All rights reserved. Website design by Aregawi Fikre,
+        powered by HTML and CSS.
+      </p>
+    </footer>
+    <script src="./js/scripts.js">
+      // function contactSubmit() {
+      //   alert("Form submitted successfully");
+      //   document.body.classList.toggle('afterclick');
+      //   document.body.innerHTML = document.getElementById("my-contact-info").innerHTML;
+      // }
+    </script>
+  </body>
 </html>
