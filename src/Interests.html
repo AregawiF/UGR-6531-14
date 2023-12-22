@@ -3,71 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
   <title>Interests</title>
 </head>
 <body>
-  <header>
-    <p>AREGAWI FIKRE</p>
-    <nav>
-      <ul>
-        <li><a href="./Home-Page.html">Home-Page</a></li>
-        <li><a href="./Education.html">Education</a></li>
-        <li><a href="./Interests.html">Interests</a></li>
-        <li><a href="./Resume.html">Resume</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
+  <header class="bg-gradient-to-r from-cyan-500 to-blue-500 pb-3">
+    <p class="italic mb-3 pl-3 pt-3 "> AREGAWI FIKRE</p>
+    <nav class="mb-3">
+      <ul class="flex place-content-around md:place-content-start md:space-x-5 
+      ">
+        <div class="md:flex md:space-x-5 md:pl-6 list-disc md:list-none font-medium">
+          <li class="pr-2 pl-2 lg:mb-3 rounded hover:border lg:mr-5"><a href="./Home-Page.html">Home-Page</a></li>
+          <li class="pr-2 pl-2 lg:mb-3 rounded hover:border lg:mr-5"><a href="./Education.html">Education</a></li>
+          <li class=" pr-2 pl-2 lg:mb-3 rounded hover:border lg:mr-3"><a href="./Interests.html">Interests</a></li>
+        </div>
+        <div class="md:flex md:space-x-5 list-disc md:list-none font-medium">
+          <li class="pr-2 pl-2 rounded lg:mb-3 hover:border lg:mr-3"><a href="./Resume.html">Resume</a></li>
+          <li class="pr-2 pl-2 rounded lg:mb-3 hover:border lg:mr-3 "><a href="./Contact.html">Contact</a></li>
+        </div>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="p-4">
     <section>
-      <h2>My Interests</h2>
-      <figure>
-      <img src="./Images/Software_development.jpg" alt="picture of software development steps" >
-      <figcaption>
-        Software Development
-      </figcaption>
-    </figure>
-    <p>As a software Engineering student, I am particularly interested in the methodical investigation of coding details. Beyond mere issue resolution, I am devoted to the transformation of conceptual frameworks into functional applications. My commitment extends to navigating the dynamic landscape of technological evolution, from conceptualization to execution. Software development is my professional canvas, where I continuously hone my skills with an emphasis on meticulous debugging and the start of new projects. This dedication takes the form of a lifelong pursuit of excellence in problem-solving and the development of knowledge in the rapidly changing field of digital technology.</p>
-    <figure>
-      <img src="./Images/mobile-games-development.png" alt="picture of mobile game development">
-      <figcaption>
-        Game development
-      </figcaption>
-    </figure>
-    <p>Jumping into game development is like entering a thrilling universe where creativity meets tech magic. I'm all about crafting digital experiences that grab attention and bring joy. Though I might not be coding games, I'm hooked on understanding the ins and outs, from cool gameplay ideas to the secrets behind making things run smoothly. Every game on the journey serves as a blank page for amazing tales. Game development, for me, isn't just interesting; it's a dive into a world where tech and imagination collide in the most exciting way possible. </p>
+      <div class="grid md:gap-4 md:mb-6 grid-cols-11 lg:gap-0">
+        <div class="pr-3 lg:col-span-8 col-span-7">
+          <h2 class="text-3xl mb-3 pl-2 mt-5 font-semibold">My Interests</h2>
+          <div class="lg:grid lg:grid-cols-2">
+            <figure class="mb-3 mr-3">
+              <img src="./Images/Software_development.jpg" alt="picture of software development steps" >
+              <figcaption class="font-mono">
+                Software Development
+              </figcaption>
+            </figure>
+            <div class=" md:pt-0 md:mt-0 pr-3 md:pl-3 lg:pl-5 md:col-span-7 lg:col-span-1">
+              <p class="mb-3">As a software Engineering student, I am particularly interested in the methodical investigation of coding details. Beyond mere issue resolution, I am devoted to the transformation of conceptual frameworks into functional applications. My commitment extends to navigating the dynamic landscape of technological evolution, from conceptualization to execution. Software development is my professional canvas, where I continuously hone my skills with an emphasis on meticulous debugging and the start of new projects. This dedication takes the form of a lifelong pursuit of excellence in problem-solving and the development of knowledge in the rapidly changing field of digital technology.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="bg-gray-200 rounded-lg mb-14 mt-10 md:mb-0 p-3 col-span-4 lg:col-span-3 ">
+          <h2 class="text-lg mb-3 pt-5 font-semibold">In addition I also have interests in the following topics.</h2>
+          <ul class="">
+            <li>Coding and Programming Languages</li> <br>
+            <li>Mobile app development</li> <br>
+            <li>Algorithms and Data Structures</li> <br>
+            <li>Artificial Intelligence and Machine Learning</li> <br>
+            <li>Cybersecurity</li> <br>
+            <li>Database Management</li> <br>
+            <li>Cloud Computing</li> <br>
+          </ul>
+        </aside>
+      </div>
+      <div class="md:flex">
+        <figure class="mb-3 mr-7">
+          <img src="./Images/mobile-games-development.png" alt="picture of mobile game development" class=" ">
+          <figcaption class="font-mono">
+            Game development
+          </figcaption>
+        </figure>
+        <p class="md:w-2/3 lg:mt-10 ">Jumping into game development is like entering a thrilling universe where creativity meets tech magic. I'm all about crafting digital experiences that grab attention and bring joy. Though I might not be coding games, I'm hooked on understanding the ins and outs, from cool gameplay ideas to the secrets behind making things run smoothly. Every game on the journey serves as a blank page for amazing tales. Game development, for me, isn't just interesting; it's a dive into a world where tech and imagination collide in the most exciting way possible. </p>
+      </div>
     </section>
-    <aside>
-      <h2>In addition I also have interests in the following topics.</h2>
-      <ul>
-        <li>Coding and Programming Languages</li>
-        <li>Mobile app development</li>
-        <li>Algorithms and Data Structures</li>
-        <li>Artificial Intelligence and Machine Learning</li>
-        <li>Cybersecurity</li>
-        <li>Database Management</li>
-        <li>Cloud Computing</li>
-      </ul>
-    </aside>
     <section>
-      <h2>Other Interests</h2>
+      <h2 class="text-3xl pt-5 font-semibold">Other Interests</h2>
       <section>
-        <h2>Maze Solving Micromouse</h2>
-        <video src="./Videos/The_Fastest_Maze-Solving_Competition_On_Earth.mp4" controls >
-          <p>Your browser doesn't support this video. Here is a <a href="https://youtu.be/ZMQbHMgK2rw">link to the video</a> instead.</p>
-        </video>
-        <p>A maze-solving micromouse is a pint-sized marvel of robotics, designed to autonomously navigate intricate mazes. Outfitted with sensors like infrared or ultrasonic detectors, the micromouse skillfully maps its surroundings, strategically maneuvering through the labyrinth to reach a designated destination. This miniature robotic explorer exemplifies the convergence of programming, sensors, and algorithmic skills. In competitions and educational settings, enthusiasts program the micromouse to efficiently traverse the maze, striking a balance between speed and accuracy. The challenge not only hones technical skills in robotics and software engineering but also fosters creativity in devising optimal paths. The micromouse phenomenon illuminates the excitement of hands-on learning, where tiny robots venture into complex mazes, translating code into dynamic, real-world navigation.</p>
+        <h2 class="text-xl mb-3  pt-5 font-semibold">Maze Solving Micromouse</h2>
+        <div class="md:grid md:grid-cols-2">
+          <div class="mr-5 ">
+            <video class="mb-3 " src="./Videos/The_Fastest_Maze-Solving_Competition_On_Earth.mp4" controls >
+              <p>Your browser doesn't support this video. Here is a <a href="https://youtu.be/ZMQbHMgK2rw">link to the video</a> instead.</p>
+            </video>
+          </div>
+          <p class="mb-3 lg:mt-10">A maze-solving micromouse is a pint-sized marvel of robotics, designed to autonomously navigate intricate mazes. Outfitted with sensors like infrared or ultrasonic detectors, the micromouse skillfully maps its surroundings, strategically maneuvering through the labyrinth to reach a designated destination. This miniature robotic explorer exemplifies the convergence of programming, sensors, and algorithmic skills. 
+          </div>
+          <div class="">
+            <p>
+            In competitions and educational settings, enthusiasts program the micromouse to efficiently traverse the maze, striking a balance between speed and accuracy. The challenge not only hones technical skills in robotics and software engineering but also fosters creativity in devising optimal paths. The micromouse phenomenon illuminates the excitement of hands-on learning, where tiny robots venture into complex mazes, translating code into dynamic, real-world navigation.</p>
+        </div> 
       </section>
       <section>
-        <h2>Internet Of Things (IoT)</h2>
-        <video src="./Videos/What_is_the_Internet_of_Things-.mp4" controls >
-          <p>Your browser doesn't support this video. Here is a <a href="https://youtu.be/EKRVILAohck">link to the video</a> instead.</p>
-        </video>
-        <p>The Internet of Things (IoT) is a revolutionary concept where everyday objects are connected to the internet, enabling them to collect and exchange data. From smart homes with connected devices to industrial applications, IoT transforms our world, enhancing efficiency and convenience. It's a dynamic network that empowers devices to communicate, offering unprecedented opportunities for automation, data analysis, and improved decision-making across various domains.</p>
+        <h2 class="text-xl mb-3  pt-5 font-semibold" >Internet Of Things (IoT)</h2>
+        <div class="md:flex">
+          <div class="md:w-1/2 mr-5">
+            <video class="mb-3" src="./Videos/What_is_the_Internet_of_Things-.mp4" controls >
+              <p>Your browser doesn't support this video. Here is a <a href="https://youtu.be/EKRVILAohck">link to the video</a> instead.</p>
+            </video>
+          </div>
+          <p class="md:w-1/2 lg:mt-10">The Internet of Things (IoT) is a revolutionary concept where everyday objects are connected to the internet, enabling them to collect and exchange data. From smart homes with connected devices to industrial applications, IoT transforms our world, enhancing efficiency and convenience. It's a dynamic network that empowers devices to communicate, offering unprecedented opportunities for automation, data analysis, and improved decision-making across various domains.</p>
+        </div>
       </section>
     </section>
   </main>
   <br><br>
-  <footer>
+  <footer class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-4 pt-7 pb-4">
     <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
   </footer>
 </body>

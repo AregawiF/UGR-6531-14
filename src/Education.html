@@ -3,59 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
   <title>Education</title>
 </head>
 <body>
-  <header>
-    <p>AREGAWI FIKRE</p>
-    <nav>
-      <ul>
-        <li><a href="./Home-Page.html">Home-Page</a></li>
-        <li><a href="./Education.html">Education</a></li>
-        <li><a href="./Interests.html">Interests</a></li>
-        <li><a href="./Resume.html">Resume</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
+  <header class="bg-gradient-to-r from-cyan-500 to-blue-500 pb-3">
+    <p class="italic mb-3 pl-3 pt-3 "> AREGAWI FIKRE</p>
+    <nav class="mb-3">
+      <ul class="flex place-content-around md:place-content-start md:space-x-5 
+      ">
+        <div class="md:flex md:space-x-5 md:pl-6 list-disc md:list-none font-medium">
+          <li class="pr-2 pl-2 lg:mb-3 rounded hover:border lg:mr-5"><a href="./Home-Page.html">Home-Page</a></li>
+          <li class="pr-2 pl-2 lg:mb-3 rounded hover:border lg:mr-5"><a href="./Education.html">Education</a></li>
+          <li class=" pr-2 pl-2 lg:mb-3 rounded hover:border lg:mr-3"><a href="./Interests.html">Interests</a></li>
+        </div>
+        <div class="md:flex md:space-x-5 list-disc md:list-none font-medium">
+          <li class="pr-2 pl-2 rounded lg:mb-3 hover:border lg:mr-3"><a href="./Resume.html">Resume</a></li>
+          <li class="pr-2 pl-2 rounded lg:mb-3 hover:border lg:mr-3 "><a href="./Contact.html">Contact</a></li>
+        </div>
       </ul>
     </nav>
   </header>
   <main>
-    <table>
+    <div class="lg:grid lg:grid-cols-2">
+    <table class="border-collapse border mt-10 ml-4 mr-4 md:w-4/6 lg:col-span-1 lg:w-full lg:h-5">
       <tr>
-        <th>Courses I've taken</th>
-        <th>Credit Hours</th>
+        <th class="border border-blue-800 bg-teal-700 text-slate-200 md:p-3">Courses I've taken</th>
+        <th class="border border-blue-800 bg-teal-700 text-slate-200">Credit Hours</th>
       </tr>
       <tr>
-        <td>Fundamentals of Data Structure and Algorithm Analysis</td>
-        <td>4.00</td>
+        <td class="border border-blue-800 pl-2 md:p-2">Fundamentals of Data Structure and Algorithm Analysis</td>
+        <td class="border border-blue-800 pl-2 md:p-2">4.00</td>
       </tr>
       <tr>
-        <td>Object Oriented Programming</td>
-        <td>3.00</td>
+        <td class="border border-blue-800 pl-2 md:p-2">Object Oriented Programming</td>
+        <td class="border border-blue-800 pl-2 md:p-2">3.00</td>
       </tr>
       <tr>
-        <td>Fundamental of Database</td>
-        <td>3.00</td>
+        <td class="border border-blue-800 pl-2 md:p-2">Fundamental of Database</td>
+        <td class="border border-blue-800 pl-2 md:p-2">3.00</td>
       </tr>
       <tr>
-        <td>Fundamental of Networking</td>
-        <td>3.00</td>
+        <td class="border border-blue-800 pl-2 md:p-2">Fundamental of Networking</td>
+        <td class="border border-blue-800 pl-2 md:p-2">3.00</td>
       </tr>
       <tr>
-        <td>Discrete Mathematics</td>
-        <td>3.00</td>
+        <td class="border border-blue-800 pl-2 md:p-2">Discrete Mathematics</td>
+        <td class="border border-blue-800 pl-2 md:p-2">3.00</td>
       </tr>
-      
-    </table>
-    <section>
-      <h2>My Educational Journey</h2>
-      <p>Embarking on my academic journey at Addis Ababa Institute of Technology (AAiT), I've undertaken a diverse array of courses that form the core of my software engineering education. Fundamental subjects such as Data Structures and Algorithms have fine-tuned my problem-solving ability, while deep dives into Software Design and Architecture have provided valuable insights into building robust applications. Courses in Database Management, object oriented programming, and Discrete Mathematics have equipped me with hands-on skills, fostering a practical understanding of these critical domains. Additionally, theoretical studies in Software Engineering Principles have broadened my perspective, emphasizing the importance of structured approaches to software development.</p>
 
-      <p>The curriculum at AAiT has not only expanded my technical knowledge but also cultivated a deep-seated passion for continual learning and innovation within the dynamic realm of technology. As a third-year software engineering student, each course has been a building block, contributing to my growth and preparing me for the ever-evolving challenges and opportunities in the field.</p>
+    </table>
+    <section class="mt-4 p-4">
+        <div class="lg:ml-6 ">
+          <h2 class="text-3xl mb-3 font-semibold ml-4">My Educational Journey</h2>
+          <p >Embarking on my academic journey at Addis Ababa Institute of Technology (AAiT), I've undertaken a diverse array of courses that form the core of my software engineering education. Fundamental subjects such as Data Structures and Algorithms have fine-tuned my problem-solving ability, while deep dives into Software Design and Architecture have provided valuable insights into building robust applications. Courses in Database Management, object oriented programming, and Discrete Mathematics have equipped me with hands-on skills, fostering a practical understanding of these critical domains. Additionally, theoretical studies in Software Engineering Principles have broadened my perspective, emphasizing the importance of structured approaches to software development.</p>
+        </div>
+        </div>
+        
+      <p class="p-4">The curriculum at AAiT has not only expanded my technical knowledge but also cultivated a deep-seated passion for continual learning and innovation within the dynamic realm of technology. As a third-year software engineering student, each course has been a building block, contributing to my growth and preparing me for the ever-evolving challenges and opportunities in the field.</p>
     </section>
   </main>
     <br><br>
-  <footer>
-    <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
+  <footer class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-4 pt-7 pb-4">
+      <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
   </footer>
 </body>
 </html>

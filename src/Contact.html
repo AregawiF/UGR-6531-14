@@ -3,51 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
   <title>Contact</title>
 </head>
 <body>
-  <header>
-    <p>AREGAWI FIKRE</p>
-    <nav>
-      <ul>
-        <li><a href="./Home-Page.html">Home-Page</a></li>
-        <li><a href="./Education.html">Education</a></li>
-        <li><a href="./Interests.html">Interests</a></li>
-        <li><a href="./Resume.html">Resume</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
+  <header class="bg-gradient-to-r from-cyan-500 to-blue-500 pb-3">
+    <p class="italic mb-3 pl-3 pt-3 "> AREGAWI FIKRE</p>
+    <nav class="mb-3">
+      <ul class="flex place-content-around md:place-content-start md:space-x-5 
+      ">
+        <div class="md:flex md:space-x-5 md:pl-6 list-disc md:list-none font-medium">
+          <li class="pr-2 pl-2 lg:mb-3 rounded hover:border lg:mr-5"><a href="./Home-Page.html">Home-Page</a></li>
+          <li class="pr-2 pl-2 lg:mb-3 rounded hover:border lg:mr-5"><a href="./Education.html">Education</a></li>
+          <li class=" pr-2 pl-2 lg:mb-3 rounded hover:border lg:mr-3"><a href="./Interests.html">Interests</a></li>
+        </div>
+        <div class="md:flex md:space-x-5 list-disc md:list-none font-medium">
+          <li class="pr-2 pl-2 rounded lg:mb-3 hover:border lg:mr-3"><a href="./Resume.html">Resume</a></li>
+          <li class="pr-2 pl-2 rounded lg:mb-3 hover:border lg:mr-3 "><a href="./Contact.html">Contact</a></li>
+        </div>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="pl-3 pr-3">
     <img src="./Images/Contact_us.jpg" alt="a contact us banner">
-    <h2>Leave your comments</h2>
-    <form>
+    <h2 class="text-2xl mb-3 pl-6 mt-5 font-semibold md:ml-8">Leave your comments</h2>
+    <form class="md:ml-6">
       <label for="FirstName">First name: </label>
-      <input type="text" id="FirstName"> <br><br>
-      <label for="LastName">First name: </label>
-      <input type="text" id="LastName"> <br><br>
+      <input class="bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-lg block w-9/12 p-2 md:w-1/2 " type="text" id="FirstName"> <br>
+      <label for="LastName">Last name: </label>
+      <input class="bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-lg block w-9/12 p-2 md:w-1/2 " type="text" id="LastName"> <br>
       <label for="Email">Email: </label>
-      <input type="email" id="Email" placeholder="example@gmail.com"> <br><br>
+      <input class="bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-lg block w-9/12 p-2 md:w-1/2 " type="email" id="Email" placeholder="example@gmail.com"> <br>
       <label for="Phone">Phone number: </label>
-      <input type="tel" id="Phone" placeholder="+251 123 45 67 89"> <br><br>
+      <input class="bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-lg block w-9/12 p-2 md:w-1/2 " type="tel" id="Phone" placeholder="+251 123 45 67 89"> <br>
       <label for="Description">Message </label> <br>
-      <textarea name="Description" id="Description" cols="40" rows="7"></textarea>
-      <br><br>
-      <input type="submit" value="submit">
+      <textarea class="bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-lg block w-11/12 p-2 md:w-9/12 " name="Description" id="Description" cols="40" rows="7"></textarea>
+      <br>
+      <input class="text-white bg-blue-600 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center " type="submit" value="submit">
       <br><br>
     </form>
-    <section>
-      <h2>Contact</h2>
-      <img src="./Images/phone_icon.jpg" alt="an icon of Phone.">
-      <p>Phone Number: +251 962 21 35 30</p>
-      <img src="./Images/Email_icon.png" alt="an icon of Email.">
-      <p>Email: aregawifikre@gmail.com</p>
-      <img src="./Images/linkedin_icon.png" alt="an icon of linkedin">
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/aregawi-fikre-ab596124b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXEvx422PQOafQQem%2Fydm1w%3D%3D" target="_blank">Contact me</a></p>
-    </section>
+    <section class="ml-6">
+      <h2 class="text-2xl pl-6 mt-5 font-semibold mb-6">Contact</h2>
+      <div class="grid gap-4 grid-cols-8 grid-rows-3 md:grid-cols-10">
+        <img class="rounded-full w-10 col-span-1" src="./Images/phone_icon.jpg" alt="an icon of Phone.">
+        <p class="col-span-7 md:col-span-9">Phone Number: +251 962 21 35 30</p>
+        <img class="rounded-full w-10" src="./Images/Email_icon.png" alt="an icon of Email.">
+        <p class="col-span-7 md:col-span-9">Email: aregawifikre@gmail.com</p>
+        <img class="rounded-full w-10" src="./Images/linkedin_icon.png" alt="an icon of linkedin">
+        <p class="col-span-7 md:col-span-9">LinkedIn: <a href="https://www.linkedin.com/in/aregawi-fikre-ab596124b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXEvx422PQOafQQem%2Fydm1w%3D%3D" target="_blank">Contact me</a></p>
+      </div>
+      </section>
   </main>
       <br><br><br>
-  <footer>
+  <footer class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-4 pt-7 pb-4">
     <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
   </footer>
 </body>
