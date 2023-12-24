@@ -3,59 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
 </head>
 <body>
-  <header>
-    <p>AREGAWI FIKRE</p>
-    <nav>
-      <ul>
-        <li><a href="./Home-Page.html">Home-Page</a></li>
-        <li><a href="./Education.html">Education</a></li>
-        <li><a href="./Interests.html">Interests</a></li>
-        <li><a href="./Resume.html">Resume</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
-      </ul>
+  <header class="bg-success-subtle">
+    <p class="font-monospace fst-italic ps-2 pt-2 fw-bold">AREGAWI FIKRE</p>
+    <nav class="navbar ">
+      <ul class="container-fluid d-flex justify-content-around justify-content-md-start list-group-horizontal-md font-monospace fs-5 row">
+        <div class="d-md-flex justify-content-around col-md-6 col-lg-5 pe-md-0 col-5">
+          <li class="list-group-item"><a href="./Home-Page.html" class="icon-link-hover text-decoration-none ">Home-Page</a></li>
+          <li class="list-group-item"><a href="./Education.html" class="icon-link-hover text-decoration-none ">Education</a></li>
+          <li class="list-group-item"><a href="./Interests.html" class="icon-link-hover text-decoration-none ">Interests</a></li>
+        </div>
+        <div class="d-md-flex justify-content-around col-md-3 col-lg-3 col-4">
+          <li class="list-group-item"><a href="./Resume.html" class="icon-link-hover text-decoration-none taaaaext-black">Resume</a></li>
+          <li class="list-group-item"><a href="./Contact.html" class="icon-link-hover text-decoration-none text-secondar">Contact</a></li>
+        </div>
+      </ul> 
     </nav>
   </header>
-  <main>
-    <table>
-      <tr>
-        <th>Courses I've taken</th>
-        <th>Credit Hours</th>
-      </tr>
-      <tr>
-        <td>Fundamentals of Data Structure and Algorithm Analysis</td>
-        <td>4.00</td>
-      </tr>
-      <tr>
-        <td>Object Oriented Programming</td>
-        <td>3.00</td>
-      </tr>
-      <tr>
-        <td>Fundamental of Database</td>
-        <td>3.00</td>
-      </tr>
-      <tr>
-        <td>Fundamental of Networking</td>
-        <td>3.00</td>
-      </tr>
-      <tr>
-        <td>Discrete Mathematics</td>
-        <td>3.00</td>
-      </tr>
-      
-    </table>
-    <section>
-      <h2>My Educational Journey</h2>
+  <main class="container ">
+    <div class="row">
+      <div class="mt-3 mt-md-5 row col-lg">
+        <div class="col-lg-8 mx-auto mx-lg-0 w-100">
+          <table class="table table-striped border border-black ">
+            <tr class="">
+              <th class="text-bg-success text-center ">Courses I've taken</th>
+              <th class="text-bg-success">Credit Hours</th>
+            </tr>
+            <tr>
+              <td>Fundamentals of Data Structure and Algorithm Analysis</td>
+              <td>4.00</td>
+            </tr>
+            <tr>
+              <td>Object Oriented Programming</td>
+              <td>3.00</td>
+            </tr>
+            <tr>
+              <td>Fundamental of Database</td>
+              <td>3.00</td>
+            </tr>
+            <tr>
+              <td>Fundamental of Networking</td>
+              <td>3.00</td>
+            </tr>
+          <tr>
+            <td>Discrete Mathematics</td>
+            <td>3.00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <section class="p-3 col-lg mt-lg-4">
+      <h2 >My Educational Journey</h2>
       <p>Embarking on my academic journey at Addis Ababa Institute of Technology (AAiT), I've undertaken a diverse array of courses that form the core of my software engineering education. Fundamental subjects such as Data Structures and Algorithms have fine-tuned my problem-solving ability, while deep dives into Software Design and Architecture have provided valuable insights into building robust applications. Courses in Database Management, object oriented programming, and Discrete Mathematics have equipped me with hands-on skills, fostering a practical understanding of these critical domains. Additionally, theoretical studies in Software Engineering Principles have broadened my perspective, emphasizing the importance of structured approaches to software development.</p>
-
-      <p>The curriculum at AAiT has not only expanded my technical knowledge but also cultivated a deep-seated passion for continual learning and innovation within the dynamic realm of technology. As a third-year software engineering student, each course has been a building block, contributing to my growth and preparing me for the ever-evolving challenges and opportunities in the field.</p>
     </section>
+  </div>
+    <p >The curriculum at AAiT has not only expanded my technical knowledge but also cultivated a deep-seated passion for continual learning and innovation within the dynamic realm of technology. As a third-year software engineering student, each course has been a building block, contributing to my growth and preparing me for the ever-evolving challenges and opportunities in the field.</p>
   </main>
-    <br><br>
-  <footer>
-    <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
+  <br><br>
+  <footer class="bg-primary text-white p-2 ">
+    <p class="pt-4 ps-md-4">&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and Bootstrap.</p>
   </footer>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

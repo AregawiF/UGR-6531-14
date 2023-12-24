@@ -3,35 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
   <title>Home-Page</title>
 </head>
 <body>
-  <header>
-    <p>AREGAWI FIKRE</p>
-    <nav>
-      <ul>
-        <li><a href="./Home-Page.html">Home-Page</a></li>
-        <li><a href="./Education.html">Education</a></li>
-        <li><a href="./Interests.html">Interests</a></li>
-        <li><a href="./Resume.html">Resume</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
-      </ul>
+  <header class="bg-success-subtle">
+    <p class="font-monospace fst-italic ps-2 pt-2 fw-bold">AREGAWI FIKRE</p>
+    <nav class="navbar ">
+      <ul class="container-fluid d-flex justify-content-around justify-content-md-start list-group-horizontal-md font-monospace fs-5 row">
+        <div class="d-md-flex justify-content-around col-md-6 col-lg-5 pe-md-0 col-5">
+          <li class="list-group-item"><a href="./Home-Page.html" class="icon-link-hover text-decoration-none ">Home-Page</a></li>
+          <li class="list-group-item"><a href="./Education.html" class="icon-link-hover text-decoration-none ">Education</a></li>
+          <li class="list-group-item"><a href="./Interests.html" class="icon-link-hover text-decoration-none ">Interests</a></li>
+        </div>
+        <div class="d-md-flex justify-content-around col-md-3 col-lg-3 col-4">
+          <li class="list-group-item"><a href="./Resume.html" class="icon-link-hover text-decoration-none taaaaext-black">Resume</a></li>
+          <li class="list-group-item"><a href="./Contact.html" class="icon-link-hover text-decoration-none text-secondar">Contact</a></li>
+        </div>
+      </ul> 
     </nav>
   </header>
-  <main>
-    <h1>Hello I'm <br>Aregawi Fikre</h1>
-    <img src="./Images/Homepage_banner.png" alt="banner image">
-    <article>
+  <main class="bg-body-secondary">
+    <h1 class="text-center pt-lg-5 p-3">Hello I'm <br>Aregawi Fikre</h1>
+    <img class="w-100 mb-4" src="./Images/Homepage_banner.png" alt="banner image">
+    <article class="p-3">
       <h2>About me</h2>
       <p>Greetings! My name is Aregawi Fikre, I am a tech enthusiast living in Addis Ababa, Ethiopia. Currently I am a third-year Software Engineering student at Addis Ababa Institute of Technology. Passionate about unraveling the intricacies of code and creating innovative solutions, my academic journey has been a thrilling exploration into the dynamic world of software development. Eager to learn, adapt, and contribute to the ever-evolving tech landscape, I embrace challenges with enthusiasm. From collaborative projects to individual pursuits, I am driven by a desire to bridge the gap between theoretical knowledge and practical application, continually striving for excellence in my academic and technological pursuits.</p>
     </article>
+    <br>
+    <br>
+    <br>
+    <br>
   </main>
-  <br>
-  <br>
-  <br>
-  <br>
-  <footer>
-    <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
+  <footer class="bg-primary text-white p-2 ">
+    <p class="pt-4 ps-md-4">&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and Bootstrap.</p>
   </footer>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,42 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
   <title>Resume</title>
 </head>
 <body>
-  <header>
-    <p>AREGAWI FIKRE</p>
-    <nav>
-      <ul>
-        <li><a href="./Home-Page.html">Home-Page</a></li>
-        <li><a href="./Education.html">Education</a></li>
-        <li><a href="./Interests.html">Interests</a></li>
-        <li><a href="./Resume.html">Resume</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
-      </ul>
+  <header class="bg-success-subtle">
+    <p class="font-monospace fst-italic ps-2 pt-2 fw-bold">AREGAWI FIKRE</p>
+    <nav class="navbar ">
+      <ul class="container-fluid d-flex justify-content-around justify-content-md-start list-group-horizontal-md font-monospace fs-5 row">
+        <div class="d-md-flex justify-content-around col-md-6 col-lg-5 pe-md-0 col-5">
+          <li class="list-group-item"><a href="./Home-Page.html" class="icon-link-hover text-decoration-none ">Home-Page</a></li>
+          <li class="list-group-item"><a href="./Education.html" class="icon-link-hover text-decoration-none ">Education</a></li>
+          <li class="list-group-item"><a href="./Interests.html" class="icon-link-hover text-decoration-none ">Interests</a></li>
+        </div>
+        <div class="d-md-flex justify-content-around col-md-3 col-lg-3 col-4">
+          <li class="list-group-item"><a href="./Resume.html" class="icon-link-hover text-decoration-none taaaaext-black">Resume</a></li>
+          <li class="list-group-item"><a href="./Contact.html" class="icon-link-hover text-decoration-none text-secondar">Contact</a></li>
+        </div>
+      </ul> 
     </nav>
   </header>
-  <main>
-    <h2>My certificates and achievements</h2>
-    <figure>
-      <img src="./Images/Badge_1_VMware.PNG" alt="picture of a badge from VMware">
-      <figcaption>
-        Badge from VMware. 
-      </figcaption>
-    </figure>
-    <p>I have recieved this badge after completing the 9 hours free course on Cloud and Virtualization Concepts offered by VMware IT Academy Program. Which helped me explore a virtual machine and the benefits, move form physical environment to a virtual one, gave me a base understanding of the concepts of server, network, storage, and desktop virtualization, understand cloud concepts such as types of cloud computing and popular cloud deployment models and understand how individuals and businesses benefit from virtualization among other things.</p>
-    <figure>
-      <img src="./Images/Badge_2_RedHat.PNG" alt="picture of a badge from Red Hat">
-      <figcaption>
-        Badge from Red Hat.
-      </figcaption>
-    </figure>
-    <p>I have recieved this certificate of attendance after completing the Red Hat System Administration I (RH124) course provided by Red Hat. Which provided me with a foundation of a linux system experience. It lifted my skills by introducing key command-line concepts and enterprise-level tools. The course introduce me to Linux and the Red Hat Enterprise Linux ecosystem, helped me configure remote access using the web console, SSH and network interfaces and settings. This course was based on Red Hat® Enterprise Linux 9.0.
-</p>
+  <main class="container">
+    <h2 class="text-capitalize text-center mt-3 mb-3 mt-md-5 mb-md-5 ">My certificates and achievements</h2>
+    <section class="row w-100 ps-3 pb-3 pb-md-5">
+      <figure class="col-md ">
+        <img class="img-thumbnail" src="./Images/Badge_1_VMware.PNG" alt="picture of a badge from VMware">
+        <figcaption class="font-monospace">
+          Badge from VMware. 
+        </figcaption>
+      </figure>
+      <p class="col-md">I have recieved this badge after completing the 9 hours free course on Cloud and Virtualization Concepts offered by VMware IT Academy Program. Which helped me explore a virtual machine and the benefits, move form physical environment to a virtual one, gave me a base understanding of the concepts of server, network, storage, and desktop virtualization, understand cloud concepts such as types of cloud computing and popular cloud deployment models and understand how individuals and businesses benefit from virtualization among other things.</p>
+    </section>
+    <section class="row w-100 ps-3 pb-3">
+      <figure class="col-md ">
+        <img class="img-thumbnail" src="./Images/Badge_2_RedHat.PNG" alt="picture of a badge from Red Hat">
+        <figcaption class="font-monospace">
+          Badge from Red Hat.
+        </figcaption>
+      </figure>
+      <p class="col-md">I have recieved this certificate of attendance after completing the Red Hat System Administration I (RH124) course provided by Red Hat. Which provided me with a foundation of a linux system experience. It lifted my skills by introducing key command-line concepts and enterprise-level tools. The course introduce me to Linux and the Red Hat Enterprise Linux ecosystem, helped me configure remote access using the web console, SSH and network interfaces and settings. This course was based on Red Hat® Enterprise Linux 9.0.
+      </p>
+    </section>
   </main>
   <br><br>
-    <footer>
-    <p>&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and CSS.</p>
-    </footer>
+  <footer class="bg-primary text-white p-2 ">
+    <p class="pt-4 ps-md-4">&copy; 2023. All rights reserved. Website design by Aregawi Fikre, powered by HTML and Bootstrap.</p>
+  </footer>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
